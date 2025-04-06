@@ -1,0 +1,25 @@
+server:
+  port: 8080
+
+spring:
+#  应用名称
+  application:
+    name: volunteer_platform
+#  数据库连接
+  datasource:
+    druid:
+      url: jdbc:mysql://localhost:3306/volunteer_platform?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+      username: root
+      password: 12345688
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      initial-size: 5      # 初始化连接数‌
+      min-idle: 5          # 最小空闲连接数‌
+      max-active: 20       # 最大活跃连接数‌
+      max-wait: 60000      # 获取连接超时时间（毫秒）‌
+#
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true  # 在映射实体或者属性时，将数据库中表名和字段名中的下划线去掉，按照驼峰命名法映射
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl  # 开启SQL日志
+  mapper-locations: classpath:mapper/*.xml  # XML映射文件路径
+

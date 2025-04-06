@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .el-header, .el-footer {
+    background-color: #ffffff;
+    color: #333;
+  }
+  
+  .el-main {
+    padding: 20px;
+  }
+  
+  .el-table {
+    width: 100%;
+  }
+  
+  .el-pagination {
+    margin-top: 20px;
+    text-align: center;
+  }

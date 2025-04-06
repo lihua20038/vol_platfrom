@@ -1,0 +1,23 @@
+{
+  "name": "volunteer-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "core-js": "^3.6.5",
+    "element-plus": "^2.3.4",
+    "pinia": "^3.0.1",
+    "pinia-persistedstate-plugin": "^0.1.0",
+    "vue": "^3.2.0",
+    "vue-router": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.0",
+    "@vue/cli-plugin-babel": "^5.0.8",
+    "@vue/cli-service": "^5.0.8"
+  }
+}
